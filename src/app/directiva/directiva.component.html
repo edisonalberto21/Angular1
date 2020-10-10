@@ -1,0 +1,45 @@
+<!--NgIf-->
+<div *ngIf="!cargando">
+     <p>Hola Termino de cargar</p>
+</div>
+<img  *ngIf="cargando" src="https://media4.giphy.com/media/3oEjI6SIIHBdRxXI40/200.gif">
+<button (click)="mostrarCargando()">Visibilidad</button>
+<!-- Fin NgIf-->
+<!--NgFor-->
+<div *ngFor="let nombre of nombres">
+    <p>Hola mi nombre es :{{nombre}}</p>
+
+</div>
+
+<div class="producto" *ngFor="let producto of productos">
+    <p>El producto es: {{producto.nombre}}</p>
+    <p>Su Stock es : {{producto.stock}}</p>
+    <p>Su Fabricante es : {{producto.fabricante}}</p>
+    <p>Su fecha de Vencimiento es: {{producto.fechaVence}}</p>
+</div>
+<!-- FinNgFor-->
+
+<!-- NgSwich-->
+<div class="tab" [ngSwitch]="pestana">
+    <button (click)="cambiarpestana('perfil')">Perfil</button>
+    <button (click)="cambiarpestana('puntos')">Puntos</button>
+    <button (click)="cambiarpestana('info')">Info</button>
+
+    <div class="tabContenido">
+        <p *ngSwitchCase="'perfil'">Este es el Perfil</p>
+        <p *ngSwitchCase="'puntos'">Este son los puntos</p>
+        <p *ngSwitchCase="'info'">Esta es la Info</p>
+        <p *ngSwitchDefault>Seleccione una pestaña</p>
+    </div>
+</div>
+<!--Fin NgSwich-->
+
+<!--NgClass-->
+<button (click)="alternarfondo()">Alter</button>
+<div [ngClass]="{ 'cuadrado': mostrarcuadrado}">
+    <p>Esto debe Aparecer</p>
+</div>
+
+<!--Fin NgClass-->
+
+
