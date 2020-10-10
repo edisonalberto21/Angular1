@@ -37,7 +37,7 @@
 <!--NgClass-->
 <button (click)="alternarfondo()">Alter</button>
 <div [ngClass]="{ 'cuadrado': mostrarcuadrado}">
-    <p>Esto debe Aparecer</p>
+    <p [class.cuadrado]="mostrarcuadrado">Esto debe Aparecer</p>
 </div>
 
 <!--Fin NgClass-->
