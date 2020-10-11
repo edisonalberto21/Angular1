@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { ArticulosDetalleComponent } from './articulos-detalle/articulos-detalle.component';
+import { ArticulosComponent } from './articulos/articulos.component';
 import { DirectivaComponent } from './directiva/directiva.component';
 import { EjemploComponent } from './ejemplo/ejemplo.component';
 import { Pagina404Component } from './pagina404/pagina404.component';
@@ -33,6 +35,10 @@ const routes: Routes = [
     ]
 
   },
+  {
+      path:'articulos',component:ArticulosComponent
+  },
+  {path:'articulosDetalle',component:ArticulosDetalleComponent},
   {
     path:'**',component: Pagina404Component
 
