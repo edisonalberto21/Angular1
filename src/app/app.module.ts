@@ -9,6 +9,13 @@ import { DirectivaComponent } from './directiva/directiva.component';
 import { EjemploComponent } from './ejemplo/ejemplo.component';
 import { PipesdComponent } from './pipesd/pipesd.component';
 import { ContinuaraPipe } from './continuara.pipe';
+import { Pagina404Component } from './pagina404/pagina404.component';
+import { EncabezadoComponent } from './encabezado/encabezado.component';
+import { UsuariosComponent } from './usuarios/usuarios.component';
+import { EditarUsuariosComponent } from './usuarios/editar-usuarios/editar-usuarios.component';
+import { AgregarUsuariosComponent } from './usuarios/agregar-usuarios/agregar-usuarios.component';
+import { ArticulosComponent } from './articulos/articulos.component';
+import { ArticulosDetalleComponent } from './articulos-detalle/articulos-detalle.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +24,14 @@ import { ContinuaraPipe } from './continuara.pipe';
     DirectivaComponent,
     EjemploComponent,
     PipesdComponent,
-    ContinuaraPipe
+    ContinuaraPipe,
+    Pagina404Component,
+    EncabezadoComponent,
+    UsuariosComponent,
+    EditarUsuariosComponent,
+    AgregarUsuariosComponent,
+    ArticulosComponent,
+    ArticulosDetalleComponent
   ],
   imports: [
     BrowserModule,
